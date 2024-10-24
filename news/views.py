@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(res):
-    return HttpResponse("Hello, world. You're at the news index.")
+    return render(res, 'index.html')
 
 
 def about(request):

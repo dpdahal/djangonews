@@ -1,0 +1,26 @@
+{% extends 'layouts.html' %}
+{% block title %}
+    Home
+{% endblock %}
+
+{% load custom_tags %}
+
+
+
+
+{% block meta_keywords %}home, main page, introduction{% endblock %}
+
+
+{% block content %}
+    
+    <h1>Hello: {{name}}</h1>
+    <h1>Logo Name: {{logoname}}</h1>
+
+    {% multiply 5 10 %}
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto temporibus eligendi, accusantium accusamus, doloremque voluptatum beatae dolor fuga repellat unde odio commodi?
+         Tempora, ad. Reiciendis corporis libero tenetur odit enim.
+    </p>
+
+{% endblock %}

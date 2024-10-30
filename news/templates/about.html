@@ -1,0 +1,28 @@
+{% extends 'layouts.html' %}
+
+{% block title %}
+    About us
+{% endblock %}
+
+{% block content %}
+
+<h1>About page</h1>
+<h1>Logo Name: {{logoname}}</h1>
+    <ul>
+        {% for user in userData %}
+        <li>
+            {{ user.name }}
+        </li>
+        {% endfor %}
+    </ul>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto temporibus eligendi, accusantium accusamus, doloremque voluptatum beatae dolor fuga repellat unde odio commodi?
+         Tempora, ad. Reiciendis corporis libero tenetur odit enim.
+    </p>
+
+{% endblock %}
+
+
+{% block adsection %}
+    <h2>Ad section</h2>
+{% endblock %}

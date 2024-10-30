@@ -1,15 +1,20 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
 
 # Create your views here.
 
-def index(res):
-    return HttpResponse("Hello, world. You're at the news index.")
+def index(request):
+    
+    return render(request, 'index.html',context={'name':'Rohit'})
 
 
 def about(request):
-    return HttpResponse("This is the about page")
+    data=[
+        {'name':'Rohit','email':'rohita@gmail.com'},
+        {'name':'laxmi','email':'laxmi@gmail.com'},
+    ]
 
-
-def gallery(request,page):
-    return HttpResponse(f"This is the gallery page {page}")
+    data = {
+        'userData':data
+    }
+    return render(request, 'about.html',data)
